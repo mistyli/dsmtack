@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="css/rootfortree.css" rel="stylesheet">
+    <!--<link href="css/MyBoot/3.css" rel="stylesheet">-->
+    <!--<link href="css/bootstrap.css" rel="stylesheet">-->
+    <link href="css/data-picker/bootstrap-datepicker.min.css" rel="stylesheet">
+    <!--<link href="css/plugin/date-range-picker/daterangepicker-bs3.css" rel="stylesheet">-->
+    <!--<link href="css/plugin/fullcalendar/fullcalendar.css" rel="stylesheet">-->
+    <title>补算</title>
+    <style>
+        .row{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="col-md-3">
+                <div>日</div>
+                <input type="radio" id="rdo1" name="radio2" value="d" checked/>
+            </div>
+            <div class="col-md-3">
+                <div for="rdo2">月</div>
+                <input type="radio" id="rdo2" name="radio2" value="m"/>
+            </div>
+            <div class="col-md-3">
+                <div for="rdo3">年</div>
+                <input type="radio" id="rdo3" name="radio2" value="y"/>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-12">
+            <div id="day">
+                <div class="col-md-6">
+                    <label for="date_day_start">日数据补算起始日期：</label>
+                    <div class="input-prepend input-group">
+                        <span class="add-on input-group-addon"><i class="fa fa-calendar"></i></span>
+                        <input type="text" id="date_day_start" class="form-control"/>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="date_day_end">日数据补算起始日期：</label>
+                    <div class="input-prepend input-group">
+                        <span class="add-on input-group-addon"><i class="fa fa-calendar"></i></span>
+                        <input type="text" id="date_day_end" class="form-control"/>
+                    </div>
+                </div>
+            </div>
+            <div id="month" style="display: block;">
+                <div class="col-md-6">
+                    <label for="date_month_start">月数据补算起始日期：</label>
+                    <div class="input-prepend input-group">
+                        <span class="add-on input-group-addon"><i class="fa fa-calendar"></i></span>
+                        <input type="text" id="date_month_start" class="form-control"/>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="date_month_end">月数据补算截止日期：</label>
+                    <div class="input-prepend input-group">
+                        <span class="add-on input-group-addon"><i class="fa fa-calendar"></i></span>
+                        <input type="text" id="date_month_end" class="form-control"/>
+                    </div>
+                </div>
+            </div>
+            <div id="year" style="display: none;">
+                <div class="col-md-6">
+                    <label for="date_year_start">年数据补算起始日期：</label>
+                    <div class="input-prepend input-group">
+                        <span class="add-on input-group-addon"><i class="fa fa-calendar"></i></span>
+                        <input type="text" id="date_year_start" class="form-control"/>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="date_year_end">年数据补算截止日期：</label>
+                    <div class="input-prepend input-group">
+                        <span class="add-on input-group-addon"><i class="fa fa-calendar"></i></span>
+                        <input type="text" id="date_year_end" class="form-control"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12" style="text-align: center;">
+            <div>
+                <a id="bus" href="javascript:addCal()" class="btn btn-option3">立即补算</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/datepicker/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="/js/datepicker/bootstrap-datepicker.zh-CN.min.js"></script>
+
+<script type="text/javascript" src="js/moment/moment.min.js"></script>
+<!--<script type="text/javascript" src="js/datepicker/fullcalendar.js"></script>-->
+<script type="text/javascript" src="js/date-range-picker/daterangepicker.js"></script>
+
+<script type="text/javascript" src="js/config.js"></script>
+</body>
+</body>
+</html>
